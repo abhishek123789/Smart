@@ -1,0 +1,496 @@
+*
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+p
+{
+	
+	margin: 0;
+	border: 0;
+}
+h1
+{
+	color: green;
+}
+.row
+{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+.header_main
+{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background:#00E5FF;
+	opacity:0.90;
+	clear:both;
+}
+.header-right ul
+{
+    height: 60px;
+    list-style: none;
+    
+    
+}
+.header-right ul li
+{
+    
+    width: 110px;
+    height: 60px;
+    line-height: 60px;
+   
+    text-align: center;
+    font-size: 16px;
+    
+}
+.header-right ul li a
+{
+   
+    color: black;
+    
+    
+}
+.slider
+{
+	overflow: hidden;
+	height: 450px;
+}
+
+.slider figure div
+{
+	width: 20%;
+	float: left;
+}
+.slider figure img
+{
+	width: 100%;
+}
+.slider figure
+{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slidy infinite;
+}
+@keyframes slidy
+{
+	0%{
+		left:0%;
+	}
+	10%
+	{
+		left: 0;
+	}
+	12%
+	{
+		left:-100%;
+	}
+	22%{
+		left:-100%;
+	}
+	24%{
+		left: -200%;
+	}
+	34%{
+		left: -200%;
+	}
+	36%{
+		left: -300%;
+	}
+	46%{
+		left: -300%;
+	}
+	48%{
+		left: -400%;
+	}
+	58%{
+		left: -400%;
+	}
+	60%{
+		left: -300%;
+	}
+	70%{
+		left: -300%;
+	}
+	72%{
+		left: -200%;
+	}
+	82%{
+		left: -200%;
+	}
+	84%{
+		left: -100%;
+	}
+	94%{
+		left: -100%;
+	}
+	96%{
+		left: 0%;
+	}
+}
+
+
+.col-1
+{
+	width:8.33%;
+
+}
+.col-2
+{
+	width:16.66%;
+}
+.col-3
+{
+	width:25%;
+}
+.col-4
+{
+	width:33.33%;
+}
+.col-6
+{
+	width: 50%;
+
+}
+.col-12
+{
+	width: 100%;
+}
+
+
+.clear-both {
+   clear: both;
+}
+
+.content
+{
+	clear: both;
+	display: inline-block;
+}
+.images
+{
+	margin-left: 25px;
+	padding: 20px;
+	background:#C8E6C9;
+}
+
+h3
+{
+	padding: 10px;
+	text-align: center;
+}
+.query
+{
+	padding: 10px;
+}
+.about
+{
+	padding: 10px;
+}
+.social
+{
+	padding: 10px;
+}
+h4
+{
+	text-align: center;
+}
+.center
+{
+	text-align: center;
+}
+a
+{
+	text-decoration: none;
+}
+/*home page error message display
+*/
+#error_message
+{
+	width:50%;
+	margin:5px auto;
+	height: 30px;
+	border: 1px solid #FF0000;
+	background: #FFB9b8;
+	color:#311B92;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.form_design
+{
+	width: 40%;
+	margin:30px auto;
+	border:1px solid #FF0000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.item_box
+{
+	width: 50%;
+	margin: auto;
+	height: 200px;
+}
+/*CSS form login form*/
+.login-form
+{
+	background:#00BCD4;
+
+}
+.login {
+  width: 400px;
+  margin: 40px auto;
+  font-size: 16px;		
+}
+.login-container {
+  background: #FFF8E1;
+  padding: 12px;
+}
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.login-header {
+  background: #03A9F4;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login p {
+  padding: 12px;
+}
+
+.login input,
+.login select,
+.login textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding:16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+
+.login input[type="email"],
+.login input[type="password"] ,
+.login input[type="text"]
+{
+
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+.login input[type="submit"] {
+  background: #03A9F4;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+/*css for login ends/*
+
+Admin page*/
+.grid_12
+{
+	display: inline;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	
+}
+#branding {
+	font-weight:normal;
+	text-align:left;
+	padding:2em 1em 1.6em 1em;
+	margin-bottom:0;
+}
+
+
+
+#branding a{color:#A1EAFF; font-weight:normal;}
+#branding a:hover{color:#fff;}
+
+#branding a:before{content:" | "; color:#fff;}
+
+#branding ul, #branding ul li{margin:0px; padding:0px; }
+#branding li{padding:0px 0px 0px 0px !important;}
+
+.floatleft{float:left;}
+.floatright{float:right;}
+.marginleft10{margin-left:10px;}
+.inline-ul li{display:inline; color:#fff;}
+
+.footer
+{
+	width:100%;
+	display:flex;
+	background: #F5F5F5;
+}
+
+li
+{
+    display: inline-block;  
+   
+   
+}
+
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.menu
+{
+    height: 60px;
+}
+
+.menu ul
+{
+    height: 60px;
+	list-style: none;   
+}
+.menu ul li
+{
+    
+    float: left;
+    width:133px;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    background:#00E5FF;
+}
+
+.menu ul li a
+{
+    
+    text-decoration: none;
+    display: block;
+    color: black;
+    
+}
+.menu ul li a:hover
+{
+    
+    
+}
+
+.menu ul ul 
+{
+    position: absolute;
+    display: none;
+    
+}
+.menu ul ul li
+{
+    background: 
+}
+.menu ul li:hover>ul
+{
+    display: block;
+}
+
+
+/*New*/
+.product-image-wrapper{
+	border:1px solid #F7F7F5;
+	overflow: hidden;
+	margin-bottom:30px;
+}
+.single-products {
+  position: relative;
+}
+.single-products:hover .product-overlay {
+  display:block;
+  height:100%;
+}
+.productinfo h2{
+	color: #FE980F;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+.productinfo p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #696763;
+}
+.productinfo img{
+  width: 100%;
+}
+
+.productinfo{
+ position:relative;
+}
+.btn:hover, 
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+.cart {
+  background: #FE980F;
+  border: 0 none;
+  border-radius: 0;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.newarrival{
+	position:absolute;
+	top:0;
+	left:0
+}
+ 
+
